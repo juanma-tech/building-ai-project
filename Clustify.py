@@ -45,7 +45,7 @@ sil_score = silhouette_score(data_norm, kmeans.labels_, metric='euclidean')
 
 
 # 8. Choosing the best number of clusters
-K = range(2, 8)  # We explore a K range between 2 and 7
+K = range(2, 8)  # We explore a K range between 2 and 8
 fits = []
 scores = []
 for k in K:
