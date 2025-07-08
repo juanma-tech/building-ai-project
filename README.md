@@ -4,76 +4,53 @@ Copy the template, paste it to your GitHub README and edit! -->
 
 # Project Title
 
+Clustify: Music Explorer Powered by Clustering
 Final project for the Building AI course
 
 ## Summary
 
-Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
+Clustify is my first hands-on experiment with AI, developed as part of my learning journey in machine learning. It explores clustering algorithms, particularly K-Means, which wasn’t covered in the course, to group songs based on features like energy, tempo, and danceability. The goal is to help users discover similar tracks and auto-generate personalized playlists based on musical "vibe." It’s a work-in-progress, but a fun and creative way to learn and experiment.
 
 
 ## Background
 
-Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
+Most music recommendation systems rely heavily on user behavior, which can reinforce filter bubbles and limit discovery. This project, Clustify, offers an alternative approach based solely on the acoustic properties of songs, encouraging unexpected discoveries and broader musical exploration.
 
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
-
+This idea is part of a hands-on AI course exercise. I find interesting the idea of combining music and machine learning to explore new creative possibilities.
 
 ## How is it used?
 
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
-
-Images will make your README look nice!
-Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
-![Cat](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
-
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
-
-This is how you create code examples:
-```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
-
-   totPop = sum(pop)
-   totFish = sum(fishers)
-
-   # write your solution here
-
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
-
-main()
-```
+1. Upload a `.csv` file containing song features (e.g., danceability, energy, tempo).
+2. Clustify performs clustering using K-Means and displays the results visually.
+3. The user explores the resulting clusters to discover similar songs and potential playlist groupings.
 
 
 ## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+- Dataset: [Ultimate Spotify Tracks DB – Kaggle](https://www.kaggle.com/datasets/zaheenhamidani/ultimate-spotify-tracks-db)
+- Libraries: `pandas`, `scikit-learn`, `matplotlib`, `seaborn`
+- Techniques:
+  - Data normalization
+  - K-Means clustering
+  - Silhouette score for cluster evaluation
+  - Elbow method for selecting optimal number of clusters
 
 ## Challenges
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+- Playlist quality may vary depending on feature selection and normalization.
+- External factors like lyrics or context aren’t taken into account (yet!).
+- K-Means assumes spherical clusters, which may not always reflect the true structure of musical data.
 
 ## What next?
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
+- Add a simple UI so users can upload their own data and generate playlists with one click.
+- Connect to the Spotify API to fetch music data directly—like audio previews, album covers, or track features.
+- Add more features and try to classify songs into emotional categories to generate playlists based on mood — like relaxation, euphoria, or nostalgia.
 
 
 ## Acknowledgments
 
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
+* [Spotify clustering tutorial – DataCamp](https://www.datacamp.com/tutorial/k-means-clustering-python)
+* Dataset: [Kaggle - Ultimate Spotify Tracks DB](https://www.kaggle.com/datasets/zaheenhamidani/ultimate-spotify-tracks-db)
+* Building AI course – University of Helsinki & Reaktor
+* Special thanks to Rocío, my fellow student in a Big Data specialization course, for suggesting me the Spotify dataset.
