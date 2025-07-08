@@ -22,7 +22,7 @@ This idea is part of a hands-on AI course exercise. I find interesting the idea 
 
 ## Data sources and AI methods
 
-* Dataset: [Ultimate Spotify Tracks DB – Kaggle](https://www.kaggle.com/datasets/zaheenhamidani/ultimate-spotify-tracks-db)
+* Dataset: [30000 Spotify Songs– Kaggle](https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs)
 * Libraries: `pandas`, `scikit-learn`, `matplotlib`, `seaborn`
 * Techniques:
   * Data normalization
@@ -46,7 +46,7 @@ This idea is part of a hands-on AI course exercise. I find interesting the idea 
 ## Acknowledgments
 
 * [Spotify clustering tutorial – DataCamp](https://www.datacamp.com/tutorial/k-means-clustering-python)
-* Dataset: [Kaggle - Ultimate Spotify Tracks DB](https://www.kaggle.com/datasets/zaheenhamidani/ultimate-spotify-tracks-db)
+* Dataset: [Kaggle - 30000 Spotify Songs](https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs)
 * Building AI course – University of Helsinki & Reaktor
 * Special thanks to [Rocío](https://github.com/romodb), my fellow student in a Big Data specialization course, for inspiring me to use the Spotify dataset and introducing me to Streamlit, which I plan to explore in future versions of this project.
 
